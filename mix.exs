@@ -4,7 +4,7 @@ defmodule WebFilteringDatabase.MixProject do
   def project,
     do: [
       app: :webfilteringdatabase,
-      version: "1.0.0",
+      version: "1.0.1",
       elixir: "~> 1.14",
       description: "Elixir client for Web Filtering Database.",
       package: package(),

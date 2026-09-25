@@ -1,6 +1,6 @@
 # WebFilteringDatabase
 
-Filtering categories for domains, from Elixir. Systems that decide whether traffic is allowed, such as DNS services, proxies, parental-control backends and MSP consoles, call `classify/2` for domains their local list does not know, and receive a category from [web filtering categories for Elixir gateways](https://www.webfilteringdatabase.com) and similar enforcement points.
+Filtering categories for domains, from Elixir. Systems that decide whether traffic is allowed, such as DNS services, proxies, parental-control backends and MSP consoles, call `classify/2` for domains their local list does not know, and receive a category from the [enterprise web filter database](https://www.webfilteringdatabase.com/web-filtering-database.php).
 
 ## Installation
 
@@ -95,11 +95,11 @@ Only the value you pass and your key are sent. When classifying full URLs, drop 
 
 ## Schools and the Children's Internet Protection Act
 
-US schools and libraries that take E-rate funding must filter under CIPA. Adult, gambling, weapons and proxy categories map directly onto that duty. Many districts also want to handle generative AI separately, open in class and closed in exams. Load [AI chat and generation sites as a filter category](https://www.aitoolsblocklist.com) from the AI register for that decision.
+US schools and libraries that take E-rate funding must filter under CIPA. Adult, gambling, weapons and proxy categories map directly onto that duty. Many districts also want to handle generative AI separately, open in class and closed in exams. Districts working out [how to pilot AI tools in a district](https://www.aitoolsblocklist.com/recommended-ai-policy-for-k12-schools.php) load the AI register for that decision.
 
 ## Finding out before enforcing
 
-Resolver and proxy logs already show how people use the network. An [AI activity report from proxy logs](https://www.shadowaitools.com) is a good input before tightening policy. For topic-level context on unknown domains, [IAB labels for hosts outside your list](https://www.websitecategorizationapi.com) are available from the sibling API.
+Resolver and proxy logs already show how people use the network. A [shadow AI detection report](https://www.shadowaitools.com/detection-methodology.php) built from proxy logs is a good input before tightening policy. For topic-level context on unknown domains, a [site category check](https://www.websitecategorizationapi.com/website-url-category-check.php) is available from the sibling API.
 
 ## Testing
 
